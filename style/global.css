@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
+
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+
+  --text-color-primary: #F1F5F9;
+  --text-color-secondary: #CBD5E1;
+
+  /* font */
+  --ff-aho: "Archivo", sans-serif;
+  --fw-xl: 800;
+  --fw-lg: 600;
+  --fw-base: 400;
+  --fs-xl: 1.5rem;
+  --fs-lg: 1rem;
+  --fs-md: 0.875rem;
+}
+
+body{
+  font: var(--fw-base) var(--fs-md)/1.6 var(--ff-aho);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color: var(--brand-color-light);
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+h1,h2,h3{
+  font: inherit;
+}
