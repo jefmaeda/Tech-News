@@ -2,8 +2,22 @@
   display: none;
 }
 
+.py-base{
+  padding-block: var(--py-base);
+}
+
+.container{
+  --max-width: 24em;
+  --px: var(--px-base);
+  width: min( var(--max-width), 100% - var(--px)*2);
+  margin: auto;
+}
 @media (width >= 80em){
   .desktop-only{
     display: block;
+  }
+  .container{
+    --max-width: 90em;
+    --px: var(--px-xl);
   }
 }
