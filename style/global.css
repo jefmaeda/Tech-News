@@ -14,24 +14,27 @@
   --text-color-primary: #F1F5F9;
   --text-color-secondary: #CBD5E1;
 
+  --mobile-width: 24em;
+  --desktop-width: 80em;
   /* font */
   --ff-aho: "Archivo", sans-serif;
   --fw-xl: 800;
   --fw-lg: 600;
   --fw-base: 400;
   --fs-xl: 1.5rem;
-  --fs-lg: 1rem;
-  --fs-md: 0.875rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.875rem;
 
   /* padding */
   --px-base: 1rem;
   --px-xl: 2rem;
   --py-base: 1rem;
-  --pd-base: 1rem;
+  --py-lg: 1.625rem;
+  /* --pd-base: 1rem; */
 }
 
 body{
-  font: var(--fw-base) var(--fs-md)/1.6 var(--ff-aho);
+  font: var(--fw-base) var(--fs-md)/1.4 var(--ff-aho);
   background-color: var(--bg-color);
   color: var(--text-color-primary);
 }
@@ -45,10 +48,10 @@ a:hover{
   color: var(--brand-color-light);
 }
 
-img{
+/* img{
   width: 100%;
   display: block;
-}
+} */
 
 h1,h2,h3{
   font: inherit;

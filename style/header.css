@@ -1,0 +1,45 @@
+#primary{
+  padding-block: var(--py-base);
+  
+  &.flow{
+    justify-content: space-between;
+  }
+
+  & div:nth-child(2){
+    & img{
+      width: 6.25rem;
+    }
+  }
+}
+
+#secondary{
+  overflow: hidden;
+  padding-block: .875rem;
+
+  &.flow{
+    gap: 2rem;
+  }
+
+  & a{
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+  }
+}
+
+@media (width >= 80em){
+  #primary{
+    padding-block: var(--py-lg);
+
+    & div{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    & div:nth-child(2){
+      & img{
+        width: 10rem;
+      }
+    }
+  }
+}

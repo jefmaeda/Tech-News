@@ -6,18 +6,45 @@
   padding-block: var(--py-base);
 }
 
+.flow{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-flow-cols{
+  grid-auto-flow: column;
+}
+
 .container{
-  --max-width: 24em;
+  --max-width: var(--mobile-width);
   --px: var(--px-base);
   width: min( var(--max-width), 100% - var(--px)*2);
-  margin: auto;
+  margin-inline: auto;
 }
+
+.out-line{
+  max-width: var(--mobile-width);
+  border: solid 1px var(--stroke-color);
+  border-inline: none;
+  margin-inline: auto;
+}
+
 @media (width >= 80em){
   .desktop-only{
-    display: block;
+    display: inline-block;
   }
   .container{
-    --max-width: 90em;
+    --max-width: var(--desktop-width);
     --px: var(--px-xl);
+  }
+  .out-line{
+    max-width: var(--desktop-width);
+  }
+  .flow{
+    display: grid;
+    grid-auto-flow: column;
   }
 }
