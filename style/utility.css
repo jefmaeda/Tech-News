@@ -39,6 +39,17 @@
 .text-sm{
   font: var(--fw-base) var(--fs-sm)/1.6 var(--ff-aho);
 }
+
+.line-clamp{
+  --line: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line);       /* número máximo de linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*  */
+
 .container{
   --max-width: var(--mobile-width);
   --px: var(--px-base);
