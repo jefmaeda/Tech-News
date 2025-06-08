@@ -39,6 +39,10 @@ body{
   color: var(--text-color-primary);
 }
 
+main{
+  margin-top: 1rem;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -48,11 +52,16 @@ a:hover{
   color: var(--brand-color-light);
 }
 
-/* img{
+img{
   width: 100%;
-  display: block;
-} */
+} 
 
 h1,h2,h3{
   font: inherit;
+}
+
+@media (width >= 80em){
+  main{
+    margin-top: 2.5rem;
+  }
 }

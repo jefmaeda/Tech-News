@@ -14,9 +14,11 @@
   display: grid;
 }
 
-.grid-flow-cols{
-  grid-auto-flow: column;
+.gap-1rem{
+  gap: 1rem;
 }
+
+
 
 .container{
   --max-width: var(--mobile-width);
@@ -33,18 +35,31 @@
 }
 
 @media (width >= 80em){
+  
   .desktop-only{
     display: inline-block;
   }
+  
   .container{
     --max-width: var(--desktop-width);
     --px: var(--px-xl);
   }
+  
   .out-line{
     max-width: var(--desktop-width);
   }
+  
   .flow{
     display: grid;
     grid-auto-flow: column;
+  }
+  
+  .desktop-flow-cols{
+  grid-auto-flow: column;
+  }
+  
+  .desktop-cols-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   }
 }
