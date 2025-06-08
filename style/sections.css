@@ -4,7 +4,7 @@
     object-fit: cover;
   }
 
-  & > div:nth-child(1){
+  & > figure:nth-child(1){
     height: 420px;
   }
   
@@ -23,6 +23,23 @@
         transparent 0%,
         #020617 100%
       );
+    }
+
+    & figcaption{
+      position: absolute;
+      bottom: 0;
+      padding: 1rem;
+
+      & h1{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;       /* número máximo de linhas */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 6rem;
+
+        margin-top: .5rem;
+      }
     }
   }
 
@@ -47,8 +64,14 @@
 @media (width >= 80em){
 
   #featured{
-    & > div:nth-child(1){
+    & > figure:nth-child(1){
       height: 100%;
+    }
+
+    & .card{
+      & figcaption{
+        padding: 1.5rem;
+      }
     }
   }
 

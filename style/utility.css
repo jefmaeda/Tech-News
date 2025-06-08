@@ -6,6 +6,7 @@
   padding-block: var(--py-base);
 }
 
+/* display */
 .flow{
   display: flex;
 }
@@ -18,8 +19,26 @@
   gap: 1rem;
 }
 
+/* fonts */
+.text-2xl{
+  font: var(--fw-xl) var(--fs-xl)/1.35 var(--ff-aho);
+}
 
+.text-xl{
+  font: var(--fw-xl) var(--fs-md)/1.40 var(--ff-aho);
+}
 
+.text-lg{
+  font: var(--fw-xl) var(--fs-sm)/1.4 var(--ff-aho) ;
+}
+
+.text-span{
+  font: var(--fw-lg) var(--fs-sm)/1.45 var(--ff-aho);
+}
+
+.text-sm{
+  font: var(--fw-base) var(--fs-sm)/1.6 var(--ff-aho);
+}
 .container{
   --max-width: var(--mobile-width);
   --px: var(--px-base);
