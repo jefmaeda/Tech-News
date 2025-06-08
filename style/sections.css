@@ -3,6 +3,10 @@
     height: 100%;
     object-fit: cover;
   }
+
+  & > div:nth-child(1){
+    height: 420px;
+  }
   
   & .card{
     position: relative;
@@ -41,7 +45,11 @@
 }
 
 @media (width >= 80em){
-  & img{
 
+  #featured{
+    & > div:nth-child(1){
+      height: 100%;
+    }
   }
+
 }
