@@ -6,7 +6,6 @@
 
   & > figure:nth-child(1){
     height: 420px;
-    border: solid;
   }
   
   & .card{
