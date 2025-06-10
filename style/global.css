@@ -41,6 +41,7 @@ body{
 
 main{
   margin-top: 1rem;
+  gap: 5rem;
 }
 
 a{
