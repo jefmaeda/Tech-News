@@ -19,6 +19,29 @@ section header{
       }
     }
   }
+
+  &+div{
+  & article{
+    display: flex;
+    gap: 1rem;
+
+    &>div{
+      & h2{
+        margin-top: .5rem;
+      }
+      & p{
+        color: var(--text-color-secondary);
+        margin-top: .25rem;
+      }
+    }
+    & img{
+      object-fit: cover;
+      width: 80px;
+      height: auto;
+
+    }
+  }
+  }
   
 }
 
@@ -108,15 +131,28 @@ section header{
   }
 }
 
+
 #ai{
-  & figure{
+  /* & article{
     display: flex;
+    gap: 1rem;
+
+    &>div{
+      & h2{
+        margin-top: .5rem;
+      }
+      & p{
+        color: var(--text-color-secondary);
+        margin-top: .25rem;
+      }
+    }
     & img{
+      object-fit: cover;
       width: 80px;
-      height: 80px;
+      height: auto;
 
     }
-  }
+  } */
 }
 
 #ads{
@@ -133,6 +169,20 @@ section header{
 }
 
 @media (width >= 80em){
+
+  section header{
+
+    &+div{
+    & article{
+      flex-direction: row-reverse;
+      height: 11rem;
+      & img{
+        width: auto;
+        height: auto;
+      }
+    }
+    }
+  }
 
   #featured{
     &>figure:nth-child(1){
@@ -153,11 +203,6 @@ section header{
   }
 
   #ai{
-    & figure{
-      & img{
-        width: 180px;
-        height: 180px;
-      }
-    }
+
   }
 }
