@@ -19,6 +19,10 @@
   gap: 1rem;
 }
 
+.gap-2rem{
+  gap: 2rem;
+}
+
 /* fonts */
 .text-2xl{
   font: var(--fw-xl) var(--fs-xl)/1.35 var(--ff-aho);

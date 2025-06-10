@@ -1,9 +1,10 @@
 section header{
   border-top: 1px solid var(--stroke-color);
   padding-block: .75rem 1.5rem;
-  justify-content: space-between;
+  color: var(--text-color-secondary);
 
   & a{
+    margin-left: auto;
     align-items: center;
     gap: .5rem;
 
@@ -107,6 +108,30 @@ section header{
   }
 }
 
+#ai{
+  & figure{
+    display: flex;
+    & img{
+      width: 80px;
+      height: 80px;
+
+    }
+  }
+}
+
+#ads{
+  position: relative;
+  & span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/icons/closer.svg);
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+}
+
 @media (width >= 80em){
 
   #featured{
@@ -124,6 +149,15 @@ section header{
   #weekly{
     &>div{
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  #ai{
+    & figure{
+      & img{
+        width: 180px;
+        height: 180px;
+      }
     }
   }
 }
