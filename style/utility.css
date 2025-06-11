@@ -7,6 +7,10 @@
 }
 
 /* display */
+.reverse{
+  flex-direction: row-reverse;
+}
+
 .flow{
   display: flex;
 }
